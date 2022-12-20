@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,51 +11,52 @@
     <link rel="stylesheet" href="/css/register.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     rel="stylesheet" />
-
 </head>
 
 <body>
+
     <header>
-        <section id="headerTop">
+        <section id="configHeader">
             <figure id="logo">
                 <a href="/">
-                    <img src="/images/LogoMercadoLiebre.svg" alt="Logo mercado liebre">
+                    <img src="/images/LogoMercadoLiebre.svg" alt="LogoMercadoLiebre">
                 </a>
             </figure>
 
-            <section class="searchBar">
+            <section class="contenedor__buscador">
                 <form action="/buscar" method="POST">
                         <input type="text" placeholder="Buscá productos, marcas y más" required="">
-                    <div class="lupa">
+                    <div class="configLupa">
                         <button type="submit"><i class="fas fa-search"></i></button>
                     </div>
                 </form>
             </section>
             
             <section class="cuotas">
-                <div><i class="fas fa-hand-holding-usd"></i>
-                </div>
-                <p>Comprá en cuotas y sin tarjeta de crédito
-                <p>
+                <div><i class="fas fa-hand-holding-usd"></i></div>
+                <p>Comprá en cuotas y sin tarjeta de crédito</p>
             </section>
+            
             <nav>
-                <ul class="navBar">
+                <ul class="Confignav">
                     <li><a href="#">Ofertas</a></li>
                     <li><a href="#">Tiendas Oficiales</a></li>
                     <li><a href="#">Vender</a></li>
                     <li><a href="#">Ayuda</a></li>
                 </ul>
-                <ul class="navBar">
+                <ul class="Confignav">
                     <li><a href="register">Creá tu cuenta<i class="far fa-id-card"></i></a></li>
                     <li><a href="login">Ingresá<i class="fas fa-sign-in-alt"></i></a></li>
                     <li><a href="#">Mis compras<i class="fas fa-shopping-basket"></i></a></li>
                 </ul>
             </nav>
+
             <div class="burger-menu">
                 <i class="fas fa-bars"></i>
             </div>
-            <figure id="homeBanner">
-                <img src="/images/Ofertas.jpg" alt="Banner Ofertas">
+
+            <figure id="BannerOfertas">
+                <img src="/images/Ofertas.jpg" alt="BannerOfertas">
             </figure>
     </header>
     
