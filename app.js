@@ -6,9 +6,9 @@ const app = express();
 const publicPatch = path.resolve(__dirname, './public');
 app.use( express.static(publicPatch) );
 
-app.listen(3000, () => {
-    console.log('Servidor corriendo en el puerto 3000')
-});
+const port= process.env.PORT || 3001
+
+    app.listen(port, ()=>console.log("Servidor corriendo en el puerto http://localhost:" + port));
 
 app.get('/', (req, res) => {
     res.sendFile(path.resolve(__dirname, './views/MercadoLiebre.html'));
@@ -21,3 +21,4 @@ app.get('/register', (req, res) => {
 app.get('/login', (req, res) => {
     res.sendFile(path.resolve(__dirname, './views/login.html'));
 })
+
